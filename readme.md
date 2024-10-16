@@ -1,27 +1,42 @@
-# Presupuesto
+# Gestor de Presupuesto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+Este proyecto es un gestor de gastos basado en un presupuesto inicial. Permite a los usuarios ingresar un presupuesto inicial y luego agregar servicios con sus respectivos gastos. Los gastos se suman a una lista siempre y cuando haya suficiente presupuesto disponible. Además, el proyecto ofrece la posibilidad de sumar al presupuesto existente y de reiniciarlo.
 
-## Development server
+## Características del Proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Ingreso de Presupuesto Inicial**: Permite al usuario definir un presupuesto inicial para gestionar sus gastos.
+- **Agregar Servicios y Gastos**: Los usuarios pueden agregar servicios con sus respectivos gastos, que se suman a una lista si el presupuesto lo permite.
+- **Sumar al Presupuesto**: Opción para incrementar el presupuesto existente.
+- **Reiniciar Presupuesto**: Permite reiniciar el presupuesto y comenzar de nuevo.
 
-## Code scaffolding
+## Tecnologías Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Framework principal para el desarrollo de la aplicación.
+- **TypeScript**: Lenguaje de programación utilizado para escribir el código de la aplicación.
+- **HTML**: Estructura semántica del contenido.
+- **CSS**: Estilización y diseño visual.
+- **Angular Material**: Biblioteca de componentes de interfaz de usuario para Angular.
 
-## Build
+## Servidor de Desarrollo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ejecuta `ng serve` para un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias cualquiera de los archivos fuente.
 
-## Running unit tests
+## Generación de Código
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecuta `ng generate component component-name` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Running end-to-end tests
+## Construcción
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Ejecuta `ng build` para construir el proyecto. Los artefactos de construcción se almacenarán en el directorio `dist/`.
 
-## Further help
+## Ejecución de Pruebas Unitarias
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ejecuta `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
+
+## Ejecución de Pruebas End-to-End
+
+Ejecuta `ng e2e` para ejecutar las pruebas end-to-end a través de una plataforma de tu elección. Para usar este comando, primero necesitas agregar un paquete que implemente capacidades de pruebas end-to-end.
+
+## Ayuda Adicional
+
+Para obtener más ayuda sobre Angular CLI usa `ng help` o visita la [página de Angular CLI Overview and Command Reference](https://angular.io/cli).
