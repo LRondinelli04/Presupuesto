@@ -1,0 +1,21 @@
+button {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+button:hover {
+  scale: 1.02;
+}
+label {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+span {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#agregarGasto {
+  margin-bottom: 0.5rem;
+}

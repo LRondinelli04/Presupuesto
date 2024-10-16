@@ -1,0 +1,18 @@
+#body {
+  margin-top: 30vh;
+  padding: 20px;
+}
+
+button {
+  width: 100%;
+  border: none;
+  transition: all 0.3s;
+}
+
+button:hover {
+  scale: 1.02;
+}
+
+.textError {
+  font-size: 1rem;
+}
