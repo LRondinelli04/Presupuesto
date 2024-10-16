@@ -19,15 +19,29 @@ export class ListarGastoComponent {
     this.presupuesto = 0;
     this.restante = 0;
 
-    //Obtener gasto
+    // Obtener gasto
     this.subscription = this._presupuestoService
       .getGasto()
       .subscribe((data) => {
-        //Agregar gasto al arreglo
+        // Agregar gasto al arreglo
         this.listGastos.push(data);
-        //Restar al restante el gasto
+        // Restar al restante el gasto
         this.restante = this.restante - data.cantidad;
       });
+
+    // Suscribirse a los cambios en el presupuesto
+    this.subscription.add(
+      this._presupuestoService.getPresupuesto().subscribe((presupuesto) => {
+        this.presupuesto = presupuesto;
+      })
+    );
+
+    // Suscribirse a los cambios en el restante
+    this.subscription.add(
+      this._presupuestoService.getRestante().subscribe((restante) => {
+        this.restante = restante;
+      })
+    );
   }
 
   ngOnInit(): void {

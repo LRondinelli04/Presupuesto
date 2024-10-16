@@ -47,6 +47,30 @@ export class IngresarGastosComponent {
     }
   }
 
+  sumarPresupuesto() {
+    const presupuestoNuevo = prompt('Ingrese el presupuesto a sumar');
+
+    // Verificar si el usuario canceló el prompt
+    if (presupuestoNuevo === null) {
+      return;
+    }
+
+    // Convertir el presupuesto ingresado a número
+    const cantidad = parseFloat(presupuestoNuevo);
+
+    if (!isNaN(cantidad) && cantidad > 0) {
+      // Lógica para sumar el gasto al presupuesto actual
+      const GASTO = {
+        nombre: this.nombreGasto,
+        cantidad: cantidad,
+      };
+      this._presupuestoService.sumarPresupuesto(GASTO);
+    } else {
+      alert('Por favor, ingrese un número válido');
+      this.sumarPresupuesto();
+    }
+  }
+
   reiniciarPresupuesto() {
     window.location.reload();
   }

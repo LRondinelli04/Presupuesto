@@ -25,9 +25,28 @@
     placeholder="Ej: 100"
   />
 </div>
-<button id="agregarGasto" class="btn btn-secondary btn-lg btn-block" (click)="agregarGasto()">
+<button
+  id="agregarGasto"
+  class="btn btn-secondary btn-lg btn-block"
+  (click)="agregarGasto()"
+>
   Agregar Gasto
 </button>
-<button class="btn btn-secondary btn-lg btn-block" (click)="reiniciarPresupuesto()">
-  Reiniciar Presupuesto
-</button>
+<div class="row g3">
+  <div class="col">
+    <button
+      class="btn btn-success btn-lg btn-block"
+      (click)="sumarPresupuesto()"
+    >
+      Sumar al Presupuesto
+    </button>
+  </div>
+  <div class="col">
+    <button
+      class="btn btn-danger btn-lg btn-block"
+      (click)="reiniciarPresupuesto()"
+    >
+      Reiniciar Presupuesto
+    </button>
+  </div>
+</div>
